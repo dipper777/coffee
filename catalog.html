@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NOIR — Catalog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav" aria-label="Main"><a class="h" href="index.html">Home</a><a class="on" href="catalog.html">Catalog</a><a href="#contact" data-contact>Contact</a><button class="cart-btn" data-cart aria-label="Open cart">Cart <span class="count" data-count data-n="0">0</span></button></nav>
+<header class="cat-head grain">
+  <a class="logo" href="index.html" aria-label="NOIR Coffee House"><b>NOIR</b><span>COFFEE HOUSE</span></a>
+  <p class="kicker">Catalog</p>
+  <h1>Coffee for the quiet hours</h1>
+  <img class="cat-hero" src="img/product.jpg" alt="NOIR Colombia coffee bag with a bowl of beans">
+  <nav class="filters" aria-label="Filter coffee">
+    <button class="on" data-filter="all">All</button>
+    <button data-filter="espresso">Espresso</button>
+    <button data-filter="filter">Filter</button>
+    <button data-filter="light">Light</button>
+    <button data-filter="medium">Medium</button>
+    <button data-filter="dark">Dark</button>
+  </nav>
+  <section class="cat-grid" id="grid">
+      <article class="card" data-tags="espresso filter medium"><img src="img/product.jpg" alt="NOIR 01 Colombia coffee bag" loading="lazy">
+        <div class="row"><div><h3>NOIR 01</h3><div class="sub">Colombia · Medium roast</div><div class="notes">Dark chocolate, hazelnut, caramel</div><div class="price">€18</div></div><button class="add" aria-label="Add NOIR 01 to cart" data-add="noir-01" data-name="NOIR 01 · Colombia" data-price="18">+</button></div></article>
+      <article class="card" data-tags="espresso dark"><img src="img/product.jpg" alt="NOIR 02 Brazil coffee bag" loading="lazy">
+        <div class="row"><div><h3>NOIR 02</h3><div class="sub">Brazil · Medium-dark roast</div><div class="notes">Cocoa, almond, brown sugar</div><div class="price">€20</div></div><button class="add" aria-label="Add NOIR 02 to cart" data-add="noir-02" data-name="NOIR 02 · Brazil" data-price="20">+</button></div></article>
+      <article class="card" data-tags="filter light"><img src="img/product.jpg" alt="NOIR 03 Ethiopia coffee bag" loading="lazy">
+        <div class="row"><div><h3>NOIR 03</h3><div class="sub">Ethiopia · Light roast</div><div class="notes">Jasmine, bergamot, peach</div><div class="price">€17</div></div><button class="add" aria-label="Add NOIR 03 to cart" data-add="noir-03" data-name="NOIR 03 · Ethiopia" data-price="17">+</button></div></article>
+  </section>
+</header>
+<main>
+  <section class="lower grain">
+    <p class="curious">For the curious</p>
+    <h2>NOIR Discovery Set</h2>
+    <p class="d1">Three origins, 50 g each. Find your quiet hour.</p>
+    <p class="price">€14</p>
+    <button class="btn-dark" data-add="discovery-set" data-name="NOIR Discovery Set" data-price="14">Add to cart</button>
+    <hr>
+    <h3>Never run out of quiet</h3>
+    <p class="small">Fresh coffee every two weeks or monthly.</p>
+    <p class="small">Save 10%, pause anytime.</p>
+    <button class="btn-line" id="subscribe">Subscribe</button>
+  </section>
+  <section class="contact" id="contact">
+  <div class="contact-grid">
+    <div>
+      <p class="eyebrow" style="color:#e9e4de">Get in touch</p>
+      <h2>Have a question?<br>We’d love to hear from you.</h2>
+    </div>
+    <a class="mail" href="mailto:hello@noir.coffee"><svg viewBox="0 0 38 30" fill="none" stroke="#fff" stroke-width="3"><rect x="1.5" y="1.5" width="35" height="27" rx="2"/><path d="M2 4l17 14L36 4"/></svg>hello@noir.coffee</a>
+    <form class="form" id="contact-form" novalidate>
+      <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required></div>
+      <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="Your email" autocomplete="email" required></div>
+      <div class="field"><label for="message">Message</label><textarea id="message" name="message" placeholder="Your message" required></textarea></div>
+      <button class="send" type="submit">Send message &nbsp;→</button>
+      <p class="form-note" id="form-note" role="status"></p>
+    </form>
+  </div>
+  <div class="foot"><div class="brand">NOIR</div></div>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

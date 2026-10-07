@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NOIR — Coffee without noise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav" aria-label="Main"><a class="h on" href="index.html">Home</a><a class="" href="catalog.html">Catalog</a><a href="#contact" data-contact>Contact</a><button class="cart-btn" data-cart aria-label="Open cart">Cart <span class="count" data-count data-n="0">0</span></button></nav>
+<a class="logo" href="index.html" aria-label="NOIR Coffee House"><b>NOIR</b><span>COFFEE HOUSE</span></a>
+<header class="hero">
+  <div class="hero-inner">
+    <h1>Coffee,<br>without noise.</h1>
+    <p>Carefully selected coffee for slow mornings and quiet moments.</p>
+    <a class="btn-hero" href="catalog.html">Explore coffee &nbsp;→</a>
+  </div>
+</header>
+<main>
+  <div class="light-block grain">
+    <section class="about" id="about">
+      <div>
+        <p class="eyebrow">About NOIR</p>
+        <h2>Coffee for the<br>quiet hours.</h2>
+        <p>We believe coffee doesn't need to be loud.<br>It only needs to be good. NOIR is a small brand focused on exceptional beans, thoughtful roasting and a slower pace.</p>
+        <a class="btn-brown" href="catalog.html">Discover &nbsp;→</a>
+      </div>
+      <img src="img/product.jpg" alt="NOIR coffee bag with a bowl of beans">
+    </section>
+    <section class="cards" id="coffee">
+      <a class="card" href="catalog.html"><img src="img/product.jpg" alt="NOIR 01 Colombia coffee bag" loading="lazy">
+        <div class="row"><div><h3>NOIR 01</h3><div class="sub">Colombia</div><div class="price">€18</div></div><svg class="arrow" viewBox="0 0 50 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 7h46M40 1l7 6-7 6"/></svg></div></a>
+      <a class="card" href="catalog.html"><img src="img/product.jpg" alt="NOIR 02 Brazil coffee bag" loading="lazy">
+        <div class="row"><div><h3>NOIR 02</h3><div class="sub">Brazil</div><div class="price">€20</div></div><svg class="arrow" viewBox="0 0 50 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 7h46M40 1l7 6-7 6"/></svg></div></a>
+      <a class="card" href="catalog.html"><img src="img/product.jpg" alt="NOIR 03 Ethiopia coffee bag" loading="lazy">
+        <div class="row"><div><h3>NOIR 03</h3><div class="sub">Ethiopia</div><div class="price">€17</div></div><svg class="arrow" viewBox="0 0 50 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 7h46M40 1l7 6-7 6"/></svg></div></a>
+    </section>
+  </div>
+  <section class="why grain">
+    <div class="why-top">
+      <div><p class="eyebrow">Why NOIR</p><h2>Pure beans.<br>Greater moments.</h2></div>
+      <p>Thoughtfully sourced. Carefully roasted. Always exceptional. We work directly with growers and roast in small batches, so every cup tastes the way it was meant to.</p>
+    </div>
+    <div class="pillars">
+      <div class="pillar"><div class="n">01</div><h4>Craft</h4><p>Small-batch roasting for richer flavor.</p></div>
+      <div class="pillar"><div class="n">02</div><h4>Quality</h4><p>Carefully selected specialty beans.</p></div>
+      <div class="pillar"><div class="n">03</div><h4>Origin</h4><p>Beans sourced from unique regions.</p></div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+  <div class="contact-grid">
+    <div>
+      <p class="eyebrow" style="color:#e9e4de">Get in touch</p>
+      <h2>Have a question?<br>We’d love to hear from you.</h2>
+    </div>
+    <a class="mail" href="mailto:hello@noir.coffee"><svg viewBox="0 0 38 30" fill="none" stroke="#fff" stroke-width="3"><rect x="1.5" y="1.5" width="35" height="27" rx="2"/><path d="M2 4l17 14L36 4"/></svg>hello@noir.coffee</a>
+    <form class="form" id="contact-form" novalidate>
+      <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required></div>
+      <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="Your email" autocomplete="email" required></div>
+      <div class="field"><label for="message">Message</label><textarea id="message" name="message" placeholder="Your message" required></textarea></div>
+      <button class="send" type="submit">Send message &nbsp;→</button>
+      <p class="form-note" id="form-note" role="status"></p>
+    </form>
+  </div>
+  <div class="foot"><div class="brand">NOIR</div></div>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
